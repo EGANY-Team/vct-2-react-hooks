@@ -10,21 +10,6 @@ class UserDetail extends Component {
     };
   }
 
-  componentDidMount() {
-    console.log("UserDetail cdm");
-    const { userId } = this.props;
-    if (userId) {
-      api
-        .getUserById(userId)
-        .then(json => {
-          console.log(json);
-        })
-        .catch(error => console.log(error));
-    } else {
-      // do nothing
-    }
-  }
-
   componentDidUpdate(prevProps) {
     console.log("UserDetail cdu");
     const newUserId = this.props.userId;
@@ -33,10 +18,11 @@ class UserDetail extends Component {
     if (newUserId === oldUserId) return;
 
     if (newUserId) {
+      this.setState({ isLoading: true });
       api
         .getUserById(newUserId)
         .then(json => {
-          this.setState({ user: json.data });
+          this.setState({ user: json.data, isLoading: false });
         })
         .catch(error => console.log(error));
     } else {
