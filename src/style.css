@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+img,
+video,
+canvas {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  width: 66.67%;
+  margin: 1rem auto;
+  display: flex;
+}
+
+.user-list {
+  display: grid;
+  padding: 1rem;
+  width: 50%;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+}
+
+.user {
+  padding: 0.5rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user:hover,
+.user--selected {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.user img {
+  margin-bottom: 0.5rem;
+}
+
+.user p {
+  text-align: center;
+}
+
+.user-detail {
+  display: block;
+  padding: 1rem;
+  width: 50%;
+  outline: dashed 1px rgba(0, 0, 0, 0.2);
+}
+
+.user-detail h3 {
+  text-align: center;
+  color: teal;
+  margin-bottom: 0.5rem;
+}
+.user-detail .user--selected {
+  cursor: auto;
+}

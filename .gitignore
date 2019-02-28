@@ -1,0 +1,7 @@
+# chứa node packages (react, react-dom và các thành phần liên quan)
+node_modules
+# thư mục cache tạo ra bởi Parcel
+.cache
+# thư mục build mặc định của Parcel
+# ở đây mình chỉ dùng trong lúc develop nên ignore để tránh conflict
+dist
