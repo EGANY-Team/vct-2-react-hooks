@@ -5,3 +5,6 @@ node_modules
 # thư mục build mặc định của Parcel
 # ở đây mình chỉ dùng trong lúc develop nên ignore để tránh conflict
 dist
+
+# thư mục build của chúng ta
+build
