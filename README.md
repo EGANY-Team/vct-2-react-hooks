@@ -2,7 +2,9 @@
 
 ## Giới thiệu
 
-Đây là demo phục vụ cho bài viết [Vọc cùng Thành #2: React Hooks](https://devnow.vn/?p=2547).
+![react-hooks-demo.png](./react-hooks-demo.png)
+
+Đây là demo phục vụ cho bài viết [Vọc cùng Thành #2: React Hooks](https://devnow.vn/voc-cung-thanh-2-react-hooks.html).
 
 Demo được xây dựng bằng [React (v16.8.3)](http://reactjs.org/) (giao diện), [ReqRes](https://reqres.in/) (mockup data) và [Parcel](http://parceljs.org/) (bundler).
 
@@ -11,7 +13,7 @@ Demo bao gồm các chức năng:
 1. Hiển thị danh sách `user`.
 2. Hiển thị thông tin chi tiết của `user` khi được chọn.
 
-Link demo: 
+Link demo: http://vct2-react-hooks.now.sh/
 
 ## Trước khi cài đặt
 
